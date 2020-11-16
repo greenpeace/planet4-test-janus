@@ -34,7 +34,7 @@ job_environments:
       NEWRELIC_APPNAME: P4 test-janus Development
       WP_DB_NAME: planet4-test-janus_wordpress_develop
       WP_STATELESS_BUCKET: planet4-test-janus-stateless-develop
-      WP_VERSION: 5.5.1
+      WP_VERSION: 5.5.3
 job_definitions:
   visualtests_reference_steps: &visualtests_reference_steps
     docker:
