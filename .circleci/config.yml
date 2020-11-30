@@ -34,7 +34,6 @@ job_environments:
       NEWRELIC_APPNAME: P4 test-janus Development
       WP_DB_NAME: planet4-test-janus_wordpress_develop
       WP_STATELESS_BUCKET: planet4-test-janus-stateless-develop
-      WP_VERSION: 5.5.3
 job_definitions:
   visualtests_reference_steps: &visualtests_reference_steps
     docker:
@@ -159,7 +158,10 @@ job_definitions:
       - attach_workspace:
           at: /tmp/workspace
       - run: activate-gcloud-account.sh
-      - run: BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num) make deploy
+      - run: make prepare-helm
+      - run: make backup
+      - run: BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num) make deploy-helm
+      - run: make post-deploy
       - when:
           condition: << parameters.is_prod >>
           steps:
