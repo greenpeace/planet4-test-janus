@@ -1,4 +1,4 @@
 #!/bin/sh
 
-wp p4-cf-purge --all
+HTTP_X_FORWARDED_PROTO=https wp p4-cf-purge --all
 
