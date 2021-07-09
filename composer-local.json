@@ -3,6 +3,7 @@
 	"description": "Greenpeace P4 test-janus",
 	"license": "MIT",
 	"require": {
+		"wpackagist-plugin/notification": "7.2.4",
 		"greenpeace/planet4-master-theme": "7",
 		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-master"
 	},
