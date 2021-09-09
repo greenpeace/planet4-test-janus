@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"require": {
 		"wpackagist-plugin/notification": "7.2.4",
-		"greenpeace/planet4-master-theme": "PLANET-6190_implement-thankyou-section",
+		"greenpeace/planet4-master-theme": "dev-master",
 		"greenpeace/planet4-plugin-gutenberg-blocks": "7"
 	},
 	"data_from": "international",
