@@ -3,7 +3,7 @@
 	"description": "Greenpeace P4 test-janus",
 	"license": "MIT",
 	"extra": {
-	  "wp-version": "6.7.1"
+		"wp-version": "6.7.1"
 	},
 	"require": {
 		"greenpeace/planet4-master-theme": "7",
