@@ -3,29 +3,6 @@
 	"description": "Greenpeace P4 test-janus",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "7",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-main",
-		"plugins/gravityforms": "*",
-		"plugins/gravityformshubspot": "*"
-	},
-	"repositories": [
-		{
-			"type": "package",
-			"package": {
-				"name": "greenpeace/planet4-master-theme",
-				"type": "wordpress-theme",
-				"autoload": {
-					"psr-4": {
-						"P4\\MasterTheme\\": "src/"
-					}
-				},
-				"extra": null,
-				"version": 7,
-				"dist": {
-					"type": "zip",
-					"url": "https://storage.googleapis.com/planet4-packages/planet4-master-theme/ba89f4d59607087ff08b2b694f5a213ed2a25972.zip"
-				}
-			}
-		}
-	]
+		"greenpeace/planet4-master-theme": "dev-main"
+	}
 }
